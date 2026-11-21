@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="uk">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="description" content="ProstoIT – віддалена IT-підтримка для малого бізнесу. Закритий Telegram-канал і контакти.">
+<title>ProstoIT Links</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=JetBrains+Mono:wght@500;700&display=swap">
+<style>
+/* layout: синя шапка брендбуку з колами, під нею одна колонка карток-посилань шириною до 480px */
+:root {
+  --brand: #0D3C7A; --brand-deep: #0F224A; --signal: #00A8FF;
+  --bg: #E9F2FD; --card: #FFFFFF; --fg: #0F224A; --muted: #4A5B7A; --line: #C9D6EA;
+  --circle1: #1A4A8A; --circle2: #16447F;
+  --sans: "Inter", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) { --bg: #0A1733; --card: #12264D; --fg: #E9F2FD; --muted: #A9BBDA; --line: #23406F; color-scheme: dark } }
+:root[data-theme="dark"] { --bg: #0A1733; --card: #12264D; --fg: #E9F2FD; --muted: #A9BBDA; --line: #23406F; color-scheme: dark }
+body { margin: 0 }
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--fg); font-family: var(--sans); font-size: 16px; line-height: 1.5 }
+.hero { position: relative; overflow: hidden; background: var(--brand); color: #fff;
+  margin-top: calc(-1 * env(safe-area-inset-top, 0px)); padding-top: calc(env(safe-area-inset-top, 0px) + 40px); padding-bottom: 72px }
+.hero::before, .hero::after { content: ""; position: absolute; border-radius: 50%; pointer-events: none }
+.hero::before { width: 420px; height: 420px; right: -160px; top: -180px; background: var(--circle1) }
+.hero::after { width: 220px; height: 220px; left: -110px; bottom: -120px; background: var(--circle2) }
+.wrap { position: relative; z-index: 1; max-width: 480px; margin: 0 auto;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)) }
+.logo { width: 190px; height: auto; display: block }
+.kicker { font-family: var(--mono); font-size: 13px; color: var(--signal); margin: 22px 0 6px; font-weight: 700 }
+h1 { font-size: clamp(28px, 7vw, 36px); line-height: 1.1; font-weight: 800; margin: 0; letter-spacing: -.5px; text-wrap: balance }
+h1 span { color: var(--signal) }
+.lead { margin: 12px 0 0; color: #D6E4F7; max-width: 38ch }
+main .wrap { margin-top: -44px; display: grid; gap: 14px; padding-bottom: 32px }
+.cta { background: var(--card); border-radius: 20px; padding: 22px; box-shadow: 0 10px 30px rgba(15,34,74,.18); display: grid; gap: 14px }
+.cta h2 { margin: 0; font-size: 20px; font-weight: 800 }
+.cta ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 6px; color: var(--muted); font-size: 15px }
+.cta li::before { content: ">_ "; font-family: var(--mono); color: var(--signal); font-weight: 700 }
+.btn { display: flex; align-items: center; justify-content: center; gap: 10px; background: var(--signal); color: #fff;
+  text-decoration: none; font-weight: 800; font-size: 17px; border-radius: 999px; padding: 15px 20px; transition: transform .15s, background .15s }
+.btn:hover { background: #0096E6; transform: translateY(-1px) }
+.btn:focus-visible, .link:focus-visible, .copy:focus-visible { outline: 3px solid var(--signal); outline-offset: 3px }
+.btn .ico { width: 22px; height: 22px; fill: currentColor }
+.note { margin: 0; font-size: 13px; color: var(--muted); text-align: center }
+.label { font-family: var(--mono); font-size: 12px; letter-spacing: .08em; text-transform: uppercase; color: var(--muted); margin: 14px 4px 0 }
+.links { display: grid; gap: 10px }
+.link { display: flex; align-items: center; gap: 14px; background: var(--card); border: 1px solid var(--line); border-radius: 16px;
+  padding: 14px 16px; color: var(--fg); text-decoration: none; transition: border-color .15s }
+.link:hover { border-color: var(--signal) }
+.badge { flex: none; width: 42px; height: 42px; border-radius: 12px; display: grid; place-items: center; background: var(--brand) }
+.badge .ico { width: 22px; height: 22px; fill: #fff }
+.txt { min-width: 0; flex: 1 }
+.txt b { display: block; font-weight: 600 }
+.txt small { display: block; color: var(--muted); font-size: 13px; overflow-wrap: anywhere }
+.go { width: 18px; height: 18px; fill: var(--muted); flex: none }
+.copy { flex: none; font: 600 13px var(--sans); color: var(--brand); background: transparent; border: 1px solid var(--line); border-radius: 999px; padding: 6px 12px; cursor: pointer }
+:root[data-theme="dark"] .copy { color: var(--signal) }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .copy { color: var(--signal) } }
+footer { text-align: center; font-size: 13px; color: var(--muted); padding-block: 8px 28px; font-family: var(--mono) }
+@media (prefers-reduced-motion: reduce) { .btn, .link { transition: none } }
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="wrap">
+    <svg class="logo" role="img" aria-label="ProstoIT" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 425 140"><g transform="translate(20,20)"><g transform="translate(0,0) scale(1)"><rect x="9.5" y="13.5" rx="5" fill="none" stroke="#FFFFFF" stroke-width="7"/><polyline points="29,29 41,40 29,51" fill="none" stroke="#00A8FF" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/><line x1="49" y1="52" x2="64" y2="52" stroke="#00A8FF" stroke-width="7" stroke-linecap="round"/><rect x="44" y="69" fill="#FFFFFF"/><rect x="27" y="81" rx="4" fill="#FFFFFF"/></g><path d="M127.625 72.0V25.4375H146.6875Q151.9375 25.4375 155.75 27.46875Q159.5625 29.5 161.609375 33.125Q163.65625 36.75 163.65625 41.53125Q163.65625 46.34375 161.5625 49.921875Q159.46875 53.5 155.59375 55.484375Q151.71875 57.46875 146.375 57.46875H138.65625V72.0ZM138.65625 48.75H144.375Q148.25 48.75 150.234375 46.765625Q152.21875 44.78125 152.21875 41.53125Q152.21875 38.25 150.21875 36.3125Q148.21875 34.375 144.34375 34.375H138.65625Z M168.1125 72.0V37.0625H178.70625V43.4375H179.08125Q180.01875 40.0 182.190625 38.3125Q184.3625 36.625 187.2375 36.625Q188.83125 36.625 190.33125 37.0V46.5Q189.55 46.21875 188.284375 46.078125Q187.01875 45.9375 186.01875 45.9375Q182.9875 45.9375 181.003125 47.875Q179.01875 49.8125 179.01875 52.9375V72.0Z M210.00625000000002 72.65625Q204.53750000000002 72.65625 200.60000000000002 70.390625Q196.66250000000002 68.125 194.55312500000002 64.078125Q192.44375000000002 60.03125 192.44375000000002 54.65625Q192.44375000000002 49.28125 194.55312500000002 45.21875Q196.66250000000002 41.15625 200.60000000000002 38.890625Q204.53750000000002 36.625 210.00625000000002 36.625Q215.47500000000002 36.625 219.39687500000002 38.890625Q223.31875000000002 41.15625 225.42812500000002 45.21875Q227.53750000000002 49.28125 227.53750000000002 54.65625Q227.53750000000002 60.03125 225.42812500000002 64.078125Q223.31875000000002 68.125 219.39687500000002 70.390625Q215.47500000000002 72.65625 210.00625000000002 72.65625ZM210.00625000000002 64.3125Q213.13125000000002 64.3125 214.78750000000002 61.640625Q216.44375000000002 58.96875 216.44375000000002 54.59375Q216.44375000000002 50.21875 214.78750000000002 47.59375Q213.13125000000002 44.96875 210.00625000000002 44.96875Q206.88125000000002 44.96875 205.22500000000002 47.59375Q203.56875000000002 50.21875 203.56875000000002 54.59375Q203.56875000000002 58.96875 205.22500000000002 61.640625Q206.88125000000002 64.3125 210.00625000000002 64.3125Z M246.93125000000003 72.65625Q240.21250000000003 72.65625 235.88437500000003 69.828125Q231.55625000000003 67.0 230.65000000000003 62.0L240.77500000000003 60.40625Q241.43125000000003 62.6875 242.99375000000003 63.84375Q244.55625000000003 65.0 247.33750000000003 65.0Q249.61875000000003 65.0 250.93125000000003 64.203125Q252.24375000000003 63.40625 252.24375000000003 62.09375Q252.24375000000003 59.8125 247.96250000000003 58.96875L241.86875000000003 57.78125Q231.52500000000003 55.8125 231.52500000000003 47.71875Q231.52500000000003 42.5 235.69687500000003 39.5625Q239.86875000000003 36.625 246.90000000000003 36.625Q253.46250000000003 36.625 257.43125000000003 39.21875Q261.40000000000003 41.8125 262.30625000000003 46.3125L252.68125000000003 47.84375Q251.61875000000003 44.125 247.08750000000003 44.125Q245.11875000000003 44.125 243.75937500000003 44.921875Q242.40000000000003 45.71875 242.40000000000003 47.0625Q242.40000000000003 48.125 243.24375000000003 48.921875Q244.08750000000003 49.71875 246.33750000000003 50.15625L253.02500000000003 51.40625Q263.30625000000003 53.34375 263.30625000000003 60.84375Q263.30625000000003 64.4375 261.19687500000003 67.09375Q259.08750000000003 69.75 255.40000000000003 71.203125Q251.71250000000003 72.65625 246.93125000000003 72.65625Z M286.54375000000005 37.0625V45.15625H280.26250000000005V61.3125Q280.26250000000005 64.03125 283.04375000000005 64.03125Q283.60625000000005 64.03125 284.62187500000005 63.890625Q285.63750000000005 63.75 286.07500000000005 63.65625L287.48125000000005 71.59375Q285.63750000000005 72.125 283.91875000000005 72.3125Q282.20000000000005 72.5 280.66875000000005 72.5Q275.10625000000005 72.5 272.23125000000005 69.890625Q269.35625000000005 67.28125 269.35625000000005 62.28125V45.15625H264.73125000000005V37.0625H269.35625000000005V28.75H280.26250000000005V37.0625Z M307.15625000000006 72.65625Q301.68750000000006 72.65625 297.75000000000006 70.390625Q293.81250000000006 68.125 291.70312500000006 64.078125Q289.59375000000006 60.03125 289.59375000000006 54.65625Q289.59375000000006 49.28125 291.70312500000006 45.21875Q293.81250000000006 41.15625 297.75000000000006 38.890625Q301.68750000000006 36.625 307.15625000000006 36.625Q312.62500000000006 36.625 316.54687500000006 38.890625Q320.46875000000006 41.15625 322.57812500000006 45.21875Q324.68750000000006 49.28125 324.68750000000006 54.65625Q324.68750000000006 60.03125 322.57812500000006 64.078125Q320.46875000000006 68.125 316.54687500000006 70.390625Q312.62500000000006 72.65625 307.15625000000006 72.65625ZM307.15625000000006 64.3125Q310.28125000000006 64.3125 311.93750000000006 61.640625Q313.59375000000006 58.96875 313.59375000000006 54.59375Q313.59375000000006 50.21875 311.93750000000006 47.59375Q310.28125000000006 44.96875 307.15625000000006 44.96875Q304.03125000000006 44.96875 302.37500000000006 47.59375Q300.71875000000006 50.21875 300.71875000000006 54.59375Q300.71875000000006 58.96875 302.37500000000006 61.640625Q304.03125000000006 64.3125 307.15625000000006 64.3125Z" fill="#FFFFFF"/><path d="M340.42500000000007 25.4375V72.0H329.39375000000007V25.4375Z M344.9125000000001 34.4375V25.4375H384.1000000000001V34.4375H370.0062500000001V72.0H359.0062500000001V34.4375Z" fill="#00A8FF"/></g></svg>
+    <p class="kicker">&gt;_ віддалена IT-підтримка</p>
+    <h1>Ваш IT-відділ <span>без зайвого штату</span></h1>
+    <p class="lead">Підключаємось до вашого ПК за 15 хвилин і вирішуємо більшість проблем за 15–30 хвилин. Київ · Львів · Одеса · Дніпро.</p>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <section class="cta" aria-labelledby="cta-h">
+      <h2 id="cta-h">Закритий канал ProstoIT Pro</h2>
+      <ul>
+        <li>щотижневі поради з IT-безпеки для бізнесу</li>
+        <li>розбори реальних випадків з наших звернень</li>
+        <li>пріоритетна підтримка для учасників</li>
+      </ul>
+      <a class="btn" id="subscribe" href="https://t.me/+HaTrM7vFZJpkZmQ6" target="_blank" rel="noopener"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.5 3.6 2.9 10.8c-1.3.5-1.3 1.2-.2 1.5l4.8 1.5 1.8 5.6c.2.6.1.9.8.9.5 0 .7-.2 1-.5l2.3-2.2 4.8 3.5c.9.5 1.5.2 1.7-.8l3.1-14.7c.3-1.3-.5-1.9-1.5-1.5ZM8.9 14.1l9-5.7c.4-.3.8-.1.5.2l-7.7 7-.3 3.2-1.5-4.7Z"/></svg>Підписатися на канал</a>
+      <p class="note">Приватний канал у Telegram – вхід за посиланням-запрошенням</p>
+    </section>
+
+    <p class="label">Соціальні мережі та контакти</p>
+    <nav class="links" aria-label="Соціальні мережі та контакти">
+      <a class="link" href="https://www.instagram.com/prostoitinfo/" target="_blank" rel="noopener">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2A4.8 4.8 0 1 0 12 16.8 4.8 4.8 0 0 0 12 7.2Zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2Zm6.1-8.1a1.1 1.1 0 1 1-2.2 0 1.1 1.1 0 0 1 2.2 0ZM21.3 8.1c-.1-1.5-.4-2.9-1.5-4-1.1-1.1-2.4-1.4-4-1.5H8.1c-1.5.1-2.9.4-4 1.5C3 5.2 2.7 6.5 2.6 8.1v7.8c.1 1.5.4 2.9 1.5 4 1.1 1.1 2.4 1.4 4 1.5h7.8c1.5-.1 2.9-.4 4-1.5 1.1-1.1 1.4-2.4 1.5-4V8.1Zm-1.9 9.9a3.2 3.2 0 0 1-1.8 1.8c-1.2.5-4.2.4-5.6.4s-4.4.1-5.6-.4A3.2 3.2 0 0 1 4.6 18c-.5-1.2-.4-4.2-.4-5.6s-.1-4.4.4-5.6A3.2 3.2 0 0 1 6.4 5c1.2-.5 4.2-.4 5.6-.4s4.4-.1 5.6.4A3.2 3.2 0 0 1 19.4 6.8c.5 1.2.4 4.2.4 5.6s.1 4.4-.4 5.6Z"/></svg></span><span class="txt"><b>Instagram</b><small>@prostoitinfo – поради та кейси</small></span><svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 19.9 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3 1.4-1.4Z"/></svg>
+      </a>
+      <a class="link" href="https://ig.me/m/prostoitinfo" target="_blank" rel="noopener">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2.5C6.6 2.5 2.5 6.4 2.5 11.6c0 2.7 1.1 5 3 6.6v3.3l3-1.7c1.1.3 2.2.5 3.5.5 5.4 0 9.5-3.9 9.5-9.1S17.4 2.5 12 2.5Zm1 12.2-2.4-2.6-4.7 2.6 5.2-5.5 2.5 2.6 4.6-2.6-5.2 5.5Z"/></svg></span><span class="txt"><b>Безкоштовна консультація</b><small>напишіть «IT» у Direct</small></span><svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 19.9 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3 1.4-1.4Z"/></svg>
+      </a>
+      <a class="link" href="https://www.facebook.com/people/Prostoit/61595370184525/" target="_blank" rel="noopener">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M22 12a10 10 0 1 0-11.6 9.9v-7H7.9V12h2.5V9.8c0-2.5 1.5-3.9 3.8-3.9 1.1 0 2.2.2 2.2.2v2.5h-1.3c-1.2 0-1.6.8-1.6 1.6V12h2.8l-.4 2.9h-2.3v7A10 10 0 0 0 22 12Z"/></svg></span><span class="txt"><b>Facebook</b><small>сторінка ProstoIT</small></span><svg class="go" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.2 5.3 19.9 12l-6.7 6.7-1.4-1.4 4.3-4.3H4v-2h12.1l-4.3-4.3 1.4-1.4Z"/></svg>
+      </a>
+      <div class="link">
+        <span class="badge"><svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1Zm1 2.4V17h16V7.4l-8 5.3-8-5.3ZM5.2 7 12 11.5 18.8 7H5.2Z"/></svg></span><span class="txt"><b>Email</b><small id="mail">prostoit@gmail.com</small></span>
+        <button class="copy" id="copy-mail" type="button">Копіювати</button>
+      </div>
+    </nav>
+  </div>
+</main>
+
+<footer>© 2026 ProstoIT · IT-підтримка для малого бізнесу</footer>
+
+<script>
+document.getElementById('copy-mail').addEventListener('click', function () {
+  var b = this, t = document.getElementById('mail').textContent;
+  function done(ok) { b.textContent = ok ? 'Скопійовано' : 'Виділено'; setTimeout(function () { b.textContent = 'Копіювати'; }, 1800); }
+  function select() { var r = document.createRange(); r.selectNodeContents(document.getElementById('mail')); var s = getSelection(); s.removeAllRanges(); s.addRange(r); done(false); }
+  try { navigator.clipboard.writeText(t).then(function () { done(true); }, select); } catch (e) { select(); }
+});
+</script>
+</body>
+</html>
